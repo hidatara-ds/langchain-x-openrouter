@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - LangChain x OpenRouter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>AI Chat</h1>
+            <p>Powered by LangChain x OpenRouter</p>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+            <div class="message system">
+                <div class="message-content">Halo! Saya asisten AI yang siap membantu Anda. Silakan ajukan pertanyaan.</div>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <textarea id="user-input" placeholder="Ketik pesan Anda di sini..." rows="3"></textarea>
+            <div class="input-controls">
+                <input type="text" id="system-prompt" placeholder="System prompt (opsional)" />
+                <button id="send-button">Kirim</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
